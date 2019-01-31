@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<!-- <script type="text/javascript" src="script.js"/> -->
+<script type="text/javascript">
+function validate() {
+  var x = document.forms["myForm"]["firstname"].value;
+  if (x == null) {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+<link rel="stylesheet" href="c.css">
+
+</head>
+<body>
+
+<div class="c1">
+<h1 align="center">Registration Form</h1>
+</div>
+
+
+<div class="class1">
+<form name="myForm" action="hello.html" submit=" return validate()" method="post">
+
+<div class="row">
+    <div class="col-25">
+      <label for="fname">Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname">
+	  
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="roll">Roll Number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="roll" name="rollNnumber" placeholder="Your roll number..">
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="mail">Mail ID</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="mail" name="mailId" placeholder="Your mail ID..">
+    </div>
+  </div>
+  
+<div class="row">
+    <div class="col-25">
+    <label for="city">City</label>
+</div>
+	
+	
+<div class="col-75">
+      <select>
+<option value="Pune">Pune</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Delhi">Delhi</option>
+<option value="Nagpur">Nagpur</option>
+<option value="Chennai">Chennai</option>
+</select>
+    </div>
+  </div>
+
+
+<div class="row">
+    <div class="col-25">
+      <label for="dob">DOB</label>
+    </div>
+    <div class="col-75">
+      <input type="datetime" id="dob" name="dob" placeholder="DD/MM/YY">
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="gender">Gender</label>
+    </div>
+    <div class="col-75">
+      <input type="radio" id="gender" name="male">Male
+	  <input type="radio" id="gender" name="female">Female
+    </div>
+  </div>
+<div class="row">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+</div>
+
+</body>
+</html>
+
